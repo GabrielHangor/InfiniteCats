@@ -2,6 +2,7 @@
 const imageContainer = document.querySelector(".image-container"),
   loader = document.querySelector(".loader");
 
+// Global variables
 let errorCounter = 0;
 let isInitialLoad = true;
 let ready = false;
@@ -10,12 +11,12 @@ let totalImages;
 let photosArray = [];
 
 // API related variables
-let initialCount = 5;
+let initialCount = 20;
 const apiKey = "yGS6PC5SN5izg-jNC1-j3fp1IOlTYPEulZaA613EoE8";
-let apiUrl = `https://api.unsplash.com/photos/random/?client_id=${apiKey}&count=${initialCount}`;
+let apiUrl = `https://api.unsplash.com/photos/random/?client_id=${apiKey}&count=${initialCount}&query=cats`;
 
 function updateURLWithNewCount(newCount) {
-  apiUrl = `https://api.unsplash.com/photos/random/?client_id=${apiKey}&count=${newCount}`;
+  apiUrl = `https://api.unsplash.com/photos/random/?client_id=${apiKey}&count=${newCount}&query=cats`;
 }
 
 // Check if all photos are loaded

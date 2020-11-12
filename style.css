@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Goldman&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
 
 html {
   box-sizing: border-box;
@@ -7,15 +7,22 @@ html {
 body {
   margin: 0;
   background: whitesmoke;
-  font-family: "Goldman", cursive;
+  font-family: 'Yatra One', cursive;
 }
 
 h1 {
+  color: rgb(17, 7, 7);
   text-align: center;
   margin-top: 25px;
-  margin-bottom: 15px;
   font-size: 40px;
   letter-spacing: 5px;
+  margin-bottom: 0;
+}
+
+h4 {
+  text-align: center;
+  margin-top: 0;
+  font-size: 1.5rem;
 }
 
 .loader {
@@ -34,21 +41,59 @@ h1 {
   transform: translate(-50%, -50%);
 }
 
+
 .image-container {
-  margin: 10px 30%;
+  margin: 10px 2%;
+  columns: 3;
+  column-gap: 0.5rem;
+  overflow: hidden;
 }
 
 .image-container img {
+  border-radius: 5px;
   width: 100%;
   margin-top: 5px;
+  transition: transform .7s ease;
 }
+
+.image-container img:hover {
+  transform: scale(1.1);
+}
+
+.unsplash-link {
+  font-style: italic;
+  text-decoration: none;
+  color: rgb(17, 7, 7);
+}
+.unsplash-link:visited {
+  text-decoration: none;
+  color: rgb(17, 7, 7);
+}
+.unsplash-link:hover {
+  text-decoration: none;
+  color: rgb(17, 7, 7);
+}
+.unsplash-link:active {
+  text-decoration: none;
+  color: rgb(17, 7, 7);
+}
+
+
+/* Large phone */
+@media screen and (max-width: 1000px) {
+.image-container {
+  columns: 2;
+}
+}
+
 
 @media screen and (max-width: 700px) {
 h1 {
-  font-size: 20px;
+  font-size: 30px;
 }
 
 .image-container {
   margin: 10px;
+  columns: 1;
 }
 }
