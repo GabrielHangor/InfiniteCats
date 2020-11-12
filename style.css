@@ -43,7 +43,7 @@ h4 {
 
 
 .image-container {
-  margin: 10px 2%;
+  margin: 10px 15%;
   columns: 3;
   column-gap: 0.5rem;
   overflow: hidden;
@@ -83,6 +83,7 @@ h4 {
 @media screen and (max-width: 1000px) {
 .image-container {
   columns: 2;
+  margin: 10px 2%;
 }
 }
 
